@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:sans-serif;
+    scroll-behavior: smooth;
 }
 
 li{
@@ -15,8 +16,6 @@ a{
 
 .backGround{
     width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3));
     position: relative;
 }
 
@@ -45,13 +44,14 @@ a{
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    height: 120px;
+    padding-top: 2.2vw;
+    height: 6vw;
 }
 
 .logo{
     margin-left: 5%;
-    width: 80px;
-    height: 80px;
+    width: 5.5vw;
+    height: 5.5vw;
 }
 
 .navigationBar ul{
@@ -63,7 +63,9 @@ a{
 
 .navigationBar ul li{
     color: white;
-    font-family: serif;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5vw;
+    min-height: 30px;
 }
 
 .navigationBar ul li:hover{
@@ -76,40 +78,54 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 40vw;
 }
 
-button{
-    background-color: transparent;
-    border-radius: 50px;
-    padding-top: 1.2vw;
-    padding-bottom: 1.2vw;
-    padding-left: 3.5vw;
-    padding-right: 3.5vw;
-    border-style: solid;
-    border-color: #fff;
-    font-family: serif;
-    font-size: 2vw;
-    font-weight: bold;
-    margin-top: 20px;
-    color: #fff;
+.button{
+background-color: transparent;
+border: solid;
+border-color: #fff;
+border-radius: 50px;
+font-family: "Montserrat", sans-serif;
+color: #fff;
+font-size: 2vw;
+padding-top: 1.5vw;
+padding-bottom: 1.5vw;
+padding-left: 4vw;
+padding-right: 4vw;
+font-weight: 400;
 }
 
 button:hover{
-    z-index: -2;
     background-color: #fff;
-    color: transparent;
+    font-weight: 300;
+    /* color: rgb(44, 40, 40); */
     border-color: transparent;
+    color: transparent;
 }
 
 
 .headingContainer h1{
     color:#fff;
     font-size: 6vw;
-    font-family: "Roboto Slab", serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .headingContainer h1:hover{
     -webkit-text-stroke: 2px #fff;
     color: transparent;
+}
+
+.editedVideos{
+    margin-top: 14vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editedVideos h1{
+    font-size: 4vw;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: underline;
+    color: rgb(34, 32, 32);
 }
