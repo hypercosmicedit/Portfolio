@@ -33,13 +33,28 @@ a{
         width: 100%;
         height: auto;
     }
+    .navigationBar ul li{
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        min-height: 30px;
+        padding-top: 3.1vw;
+    }
 }
 @media(max-aspect-ratio: 9/16){
     .backGroundVideo{
         width: auto;
-        height: 100%;
+        max-height: 120%;
+    }
+
+    .navigationBar ul li{
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.2vw;
+        min-height: 30px;
+        padding-top: 3vw;
     }
 }
+
 
 .navigationBar{
     display: flex;
@@ -85,7 +100,7 @@ a{
 
 .button{
 background-color: transparent;
-border: solid;
+border: solid 0.5vw;
 border-color: #fff;
 border-radius: 50px;
 font-family: "Montserrat", sans-serif;
@@ -100,10 +115,11 @@ font-weight: 400;
 
 button:hover{
     background-color: #fff;
-    font-weight: 300;
+    font-weight: 700;
     color: rgb(44, 40, 40); 
     border-color: transparent;
     cursor: pointer;
+    border: transparent solid 0.5vw;
 }
 
 
@@ -124,7 +140,7 @@ button:hover{
     }
 }
 .headingContainer h1:hover{
-    -webkit-text-stroke: 2px #fff;
+    -webkit-text-stroke: 1px #fff;
     color: transparent;
 }
 
