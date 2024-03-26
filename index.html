@@ -3,51 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/bg logo.png">
+    <link rel="icon" href="./assets/hyper_1.png">
     <title>Hyper Cosmic Edit</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script:wght@400..700&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     <script defer src="./index.js"></script>
 </head>
 <body>
     <div class="backGround">
-        <video autoplay loop muted playsinline class="backGroundVideo">
+       <!-- <video autoplay loop muted playsinline class="backGroundVideo">
             <source src="./assets/backGroundVideo.mp4" type="video/mp4">
-        </video>
-        <nav class="navigationBar">
-            <img src="./assets/bg logo.png" alt="logo.png" class="logo">
+        </video>-->
+        <nav class="navigationBar" style="background-color: black;">
+            <img src="./assets/hyper_1.png" alt="logo.png" class="logo">
             <ul>
-                <button id="homeBtn"><li><a href="#">HOME</a></li></button>
-                <button id="aboutBtn"><li>ABOUT ME</li></button>
-                <button id="contactBtn"><li>CONTACT US</li></button>
+                <button class="homeBtn"><li>Home</li></button>
+                <button class="aboutBtn"><li>Resume</li></button>
+                <button class="contactBtn"><li>Contact Us</li></button>
             </ul>
         </nav>
-        <div class="headingContainer">
-        <h1>HYPER COSMIC EDIT</h1>
-        <h1><a href="#section1"><button class="button">SEE EDITS</button></a></h1>
+        <div class="headingContainer" style="background-color: black;">
+        <h1 class="heading">HYPER COSMIC EDIT</h1>
+        <h1 class="subHeading">“your video, my editing”</h1>
+      <!--  <h1><a href="#section1"><button class="button">SEE EDITS</button></a></h1>-->
     </div></div>
     <h1 class="subTitle">EDITED VIDEOS</h1>
     <div class="editedVideos">
+        <section class="hidden">
+            <a href="https://www.youtube.com/watch?v=mEo3siDTDAc" target="_blank"><img src="./assets/CINEMATIC_VIDEO.png" alt="thumbnail" class="thumbnail"></a>
+        </section>
+        <section class="hidden">
+            <a href="https://www.youtube.com/watch?v=vUnBSmRhkh0" target="_blank"><img src="./assets/RUINED_1.png" alt="thumbnail" class="thumbnail"></a>
+        </section>
+        <section class="hidden">
+           <a href="https://www.youtube.com/watch?v=a53BcQ1LAes" target="_blank"> <img src="./assets/CODING.png" alt="thumbnail" class="thumbnail"></a>
+        </section>
+
         <section id="section1" class="hidden">
-            <img src="./assets/thumbnail1.webp" alt="thumbnail" class="thumbnail">
+           <a href="https://www.youtube.com/watch?v=pGTkXNLQ5HM" target="_blank"> <img src="./assets/ASSIGNMENT.png" alt="thumbnail" class="thumbnail"></a>
         </section>
         <section class="hidden">
-            <img src="./assets/thumbnail1.webp" alt="thumbnail" class="thumbnail">
-        </section>
-        <section class="hidden">
-            <img src="./assets/thumbnail1.webp" alt="thumbnail" class="thumbnail">
+            <a href="https://www.youtube.com/watch?v=n3kxdeV_mAA" target="_blank"><img src="./assets/MASTERCLASS_1.png" alt="thumbnail" class="thumbnail"></a>
         </section> 
-        <section class="hidden">
-            <img src="./assets/thumbnail1.webp" alt="thumbnail" class="thumbnail">
-        </section>
-        <section class="hidden">
-            <img src="./assets/thumbnail1.webp" alt="thumbnail" class="thumbnail">
-        </section>
-        <section class="hidden">
-            <img src="./assets/thumbnail1.webp" alt="thumbnail" class="thumbnail">
-        </section>
     </div>
     <h1 class="subTitle" style="margin-top: 7vw;">Edited Shorts</h1>
     <div class="shortsContainer">
@@ -59,7 +60,7 @@
         <img src="./assets/dummyImage.jpg" alt="dummyImage" class="editedShorts"></div>
     </div>
     <footer class="footer">
-    <div style="font-size: 2.1vw; font-weight:bold">
+    <div style="font-size: 2.1vw; font-weight:bold ; font-family: 'Aboreto', system-ui">
         Samar Jal 
     </div>
     <div style="font-size: 1vw; margin-top: 0.5vw;">
