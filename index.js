@@ -15,7 +15,7 @@ hiddenElements.forEach((el)=> observer.observe(el));
 
 
 //*********About Me Page*********//
-const aboutMe = document.querySelector(".aboutBtn");
+/*const aboutMe = document.querySelector(".aboutBtn");
 aboutMe.addEventListener("click", ()=>{ 
     document.body.innerHTML = "";
     let el = document.createElement("div");
@@ -52,11 +52,11 @@ aboutMe.addEventListener("click", ()=>{
     el.appendChild(name);
     el.appendChild(navigation);
     document.body.appendChild(el);
-})
+})/*
 
 
 
-//*********Contact Us ***********//
+//*********Contact Us ***********/
 const contactUs = document.querySelector(".contactBtn");
 contactUs.addEventListener("click", ()=>{ 
     document.body.innerHTML = "";

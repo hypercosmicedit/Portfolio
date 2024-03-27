@@ -78,7 +78,8 @@ a{
 .navigationBar ul li{
     color: white;
     font-family:'Times New Roman', Times, serif;
-    font-size: 1.5vw;
+    font-size: 1.6vw;
+    font-weight: 500;
 }
 
 .navigationBar ul li:hover{
@@ -152,7 +153,7 @@ font-weight: 400;
 }
 
 .subHeading {
-    font-family: "Themundayfreeversion-Regular", serif; /* "serif" should be "serif" without quotes */
+    font-family: "Themundayfreeversion-Regular", serif;
     font-size: 2.6vw;
     letter-spacing: 0.2vw;
     color: #fff;
@@ -266,81 +267,143 @@ font-weight: 400;
     margin-top: 5vw;
     margin-bottom: 8vw;
 }
+
+
+
 /*   Resume Page     */
-.navBarHome{
-background-color: black;
-width: 100%;
-height: 9vw;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
+.backGroundImage{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
 }
 
-.nameHome{
-    font-size: 2.5vw;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(255, 255, 255);
-    margin-left: 4vw;
-}
-
-.grpBtn{
+.resumeContainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 3vw;
-    margin-right: 4vw;
+    justify-content: flex-end;
+    padding-right: 9vw;
+    padding-top: 10vw;
 }
 
-
-.navigationBarAbout{
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.5vw;
+.firstHalf{
+    position: fixed;
+    left: 7vw;
+    min-width: 25vw;
+    min-height: 45vw;
+    border-radius: 12px;
+    background-color: ghostwhite;
 }
 
-.navigationBarAbout:hover{
-    text-decoration: underline;
-    transform: translateY(-2px);
+.secondHalf{
+    min-width: 55vw;
+    min-height: 100vw;
+    background-color: ghostwhite;
+    border-radius: 12px;
+    margin-bottom: 10vw;
 }
 
-.profileImage{
-    height: 22vw;
-    width: 22vw;
-    border-radius: 50%;
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgb(53, 53, 53);
-    box-shadow: 5px 2px 16px rgba(11, 11, 11, 0.5); 
+.profilePhoto{
+    width: 13vw;
+    height: 13vw;
+    border-radius: 12px;
+    position: fixed;
+    left: 13vw;
+    top: 1px;
+    margin-top: 4vw;
 }
 
-.mainResumePageContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5vw;
-}
-
-.plainText{
-    font-size: 1.2vw;
-    margin-top: 0.5vw;
-    text-align: center;
+.profileName{
+    z-index: 1;
+    font-family: "Themundayfreeversion-Regular", serif; 
+    color: black;
+    font-size: 2vw;
     font-weight: 600;
+    position: fixed;
+    left: 15vw;
+    top: 1px;
+    margin-top: 17vw;
+    color: black;
+    font-weight: 700;
 }
 
-.aboutContainer{
-    margin: 4vw;
-    max-width: 70vw;
+.passion{
+    background-color: #f1f1f3;
+    color: rgb(58, 57, 57);
+    width: 20vw;
+    text-align: center;
+    height: 2.2vw;
+    padding: 0.4vw;
+    font-size: 1.1vw;
+    font-weight: 500;
+    position: fixed;
+    font-family: "Montserrat", sans-serif;
+    left: 9.5vw;
+    top: 1px;
+    margin-top: 21vw;
+    border-radius: 3px;
 }
 
-.about{
-    font-size: 1.5vw;
-    font-family:serif;
-    list-style: disc;
-    margin: 0.8vw;
+.iconResume{
+    z-index: 1;
+    position: fixed;
+    left: 10.7vw;
+    top: 1px;
+    margin-top: 24.5vw;
+    padding: 0;
 }
+
+.iconProfile{
+    background-color: #f1f1f3;
+    border-radius: 8px;
+    padding: 0.4vw;
+    margin: 0.8vw 1vw;
+    border: 0;
+    height: 2.5vw;
+    width: 2.5vw;
+}
+
+.contactInformation{
+    min-width: 21vw;
+    min-height: 21vw;
+    background-color: #f1f1f3;
+    z-index: 1;
+    position: fixed;
+    left: 9vw;
+    top: 1px;
+    margin-top: 30vw;
+    border-radius: 8px;
+}
+hr{
+    background-color: darkgray;
+    width: 70%;
+    margin: auto;
+    border-color: #e3dede;
+    opacity: 0.2;
+    height: 2px;
+}
+
+.containerXY{
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.6vw;
+    align-items: center;
+}
+
+.textXY{
+    font-size: 0.9vw;
+    color: rgb(152, 151, 151);
+    font-weight: 600;
+    line-height: 1.3vw;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.textYZ{
+    font-size: 1.1vw;
+    font-family: "Montserrat", sans-serif;
+}
+
 
 
 
