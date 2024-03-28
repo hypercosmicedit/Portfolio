@@ -290,7 +290,7 @@ font-weight: 400;
     position: fixed;
     left: 7vw;
     min-width: 25vw;
-    min-height: 45vw;
+    min-height: 39.2vw;
     border-radius: 12px;
     background-color: ghostwhite;
 }
@@ -334,7 +334,7 @@ font-weight: 400;
     text-align: center;
     height: 2.2vw;
     padding: 0.4vw;
-    font-size: 1.1vw;
+    font-size: 1vw;
     font-weight: 500;
     position: fixed;
     font-family: "Montserrat", sans-serif;
@@ -365,7 +365,6 @@ font-weight: 400;
 
 .contactInformation{
     min-width: 21vw;
-    min-height: 21vw;
     background-color: #f1f1f3;
     z-index: 1;
     position: fixed;
@@ -404,8 +403,93 @@ hr{
     font-family: "Montserrat", sans-serif;
 }
 
+.aboutHeading{
+    font-size: 2.5vw;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(34, 32, 32);
+    margin: auto;
+    text-align: start;
+    margin-top: 4vw;
+    color: rgb(47, 47, 47);
+    margin-left: 3vw;
+}
 
+.aboutHR{
+    border-color: rgb(0, 106, 255);
+    height: 0.3vw;
+    background-color: rgb(0, 106, 255);
+    opacity: 1;
+    border-radius: 15px;
+    width: 30%;
+    display:inline-block;
+    margin-left: 1.7vw;
+    margin-bottom: 0.7vw;
+    border-style: none;
+}
 
+.aboutText{
+    width: 49vw;
+    font-family: serif;
+    margin: auto;
+    text-align: justify;
+    margin-top: 2vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: rgb(128, 127, 127);
+    font-size: 1.4vw;
+
+}
+
+.doingContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5vw;
+    margin-top: 2.5vw
+}
+
+.doing{
+    background-color: rgb(250, 235, 216);
+    width: 23vw;
+    border-radius: 8px;
+    height: 14vw;
+    display: flex;
+    padding: 1vw;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+.textHeading{
+    font-size: 1.3vw;
+    margin-top: 0.5vw;
+    color: rgb(46, 43, 43);
+    font-family: "Noto Sans", sans-serif;
+}
+
+.textContent{
+    font-size: 1.1vw;
+    margin-top:1.2vw;
+    text-align: justify;
+    margin-right: 1vw;
+    color: rgb(128, 127, 127);
+    font-family: "Noto Sans", sans-serif;
+}
+
+.iconDoing{
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+    background-color: transparent;
+    border: transparent;
+    width: 3.5vw;
+    height: 3vw;
+}
+
+.iconDoing:hover{
+    transform: scale(1);
+    cursor: default;
+}
 
 
 
