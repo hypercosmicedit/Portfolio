@@ -611,9 +611,85 @@ hr{
     font-weight: 500;
 }
 
+/* contactPage */
+.containerContact {
+    width: 50vw;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Montserrat", sans-serif;
+
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: "Montserrat", sans-serif;
+
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+textarea {
+    height: 130px;
+    resize: none; 
+}
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.BigContainer{
+    display: flex;
+    justify-content: center; 
+    margin-top: 1vw;
+    align-items: center;
+}
+
 .navBar:hover{
 text-decoration: underline;
 transform: rotate(0deg) skewX(-30deg) translateY(-2px);
+}
+@media(max-width: 800px){
+    .BigContainer{
+        display: flex;
+        justify-content: center; 
+        margin-top: 10vw;
+        align-items: center;
+    }
 }
 
 @media(min-aspect-ratio: 9/16){
@@ -688,6 +764,14 @@ transform: rotate(0deg) skewX(-30deg) translateY(-2px);
     .thumbnailDesign{
         width: 40vw;
         height: 22vw;
+    }
+
+    .containerContact {
+        width: 70vw;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     
 }

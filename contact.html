@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script:wght@400..700&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <img src="./assets/ashley-whitlatch-36aGnv29Ss0-unsplash.jpg" alt="bg-image" class="backGroundImage">
+    <nav class="navigationBar">
+        <div></div>
+        <ul>
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./resume.html"><li>Resume</li></a>
+            <a href="./contact.html"><li>Contact Me</li></a>
+        </ul>
+    </nav>
+    <div class="BigContainer"><div class="containerContact">
+        <h2 style="text-align: center; font-size:30px;">Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    </div>
+</body>
+</html>
