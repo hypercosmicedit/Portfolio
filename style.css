@@ -133,11 +133,11 @@ font-weight: 400;
     color:#fff;
     font-size: 4vw;
     font-family: "Montserrat", sans-serif;
-    animation: slideInFromBelow 1.5s ease-out;
+    animation: slideInFromBelow 1.2s ease-out;
 }
 @keyframes slideInFromBelow {
     0% {
-        transform: translateY(150%);
+        transform: translateY(120%);
         opacity: 0;
     }
     100% {
@@ -157,6 +157,7 @@ font-weight: 400;
     font-size: 1.7vw;
     color:rgb(255, 200, 0);
     animation: slideInFromBelow 1.5s ease-out;
+    font-weight: 400;
 }
 
 
@@ -194,7 +195,7 @@ font-weight: 400;
 
 .hidden{
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(-40%);
     transition: all 1s;
 }
 
@@ -251,6 +252,8 @@ font-weight: 400;
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+    border: 0.1vw black solid;
+    box-shadow: 3px 2px 10px 0px black;
 }
 
 .editedShorts:hover{
@@ -266,6 +269,27 @@ font-weight: 400;
     margin-bottom: 8vw;
 }
 
+.thumbnailDesignContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3vw;
+    justify-content: center;
+    gap: 2.8vw;
+    margin-bottom: 6vw;
+}
+
+.thumbnailDesign{
+    width: 28vw;
+    height: 16vw;
+}
+
+
+
+.copyright {
+    font-size: 1vw; 
+    color: #fff; 
+  }
 
 
 /*   Resume Page     */
@@ -489,6 +513,45 @@ hr{
     cursor: default;
 }
 
+.skillsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 0.4vw;
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vw;
+    margin-left: 3vw;
+    margin-top: 1vw;
+}
+
+.skillsText{
+    font-size: 1.3vw;
+    font-family: "Montserrat", sans-serif;
+    width: 14vw;
+}
+
+.skillsFillBar{
+    width: 8vw;
+    height: 0.6vw;
+    background-color: #089fda;
+    border-radius: 3px;
+}
+
+.skillsEmptyBar{
+    width: 14vw;
+    height: 0.6vw;
+    background-color: #d3d3d3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 3px;
+}
 
 
 @media(min-aspect-ratio: 9/16){
@@ -548,4 +611,21 @@ hr{
     height: 48vw;
     width: 28vw;
     }
+
+    .thumbnailDesignContainer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 3vw;
+        justify-content: center;
+        gap: 2.8vw;
+        margin-bottom: 6vw;
+        align-items: center;
+    }
+
+    .thumbnailDesign{
+        width: 40vw;
+        height: 22vw;
+    }
+    
 }
