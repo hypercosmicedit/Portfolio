@@ -152,6 +152,11 @@ font-weight: 400;
     src: url('./assets/Themundayfreeversion-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: "Helvetica";
+    src: url('./assets/HelveticaWorld-Regular.ttf') format('truetype');
+}
+
 .subHeading {
     font-family:'Times New Roman', Times, serif;
     font-size: 1.7vw;
@@ -195,13 +200,13 @@ font-weight: 400;
 
 .hidden{
     opacity: 0;
-    transform: translateX(-40%);
-    transition: all 1s;
+    transform: translateY(10%);
+    transition: all 0.7s;
 }
 
 .show{
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 @media(prefers-reduced-motion){
@@ -282,6 +287,7 @@ font-weight: 400;
 .thumbnailDesign{
     width: 28vw;
     height: 16vw;
+    border-radius: 8px;
 }
 
 
@@ -337,7 +343,7 @@ font-weight: 400;
 
 .profileName{
     z-index: 1;
-    font-family: "Themundayfreeversion-Regular", serif; 
+    font-family: "Helvetica", serif; 
     color: black;
     font-size: 2vw;
     font-weight: 600;
@@ -352,15 +358,15 @@ font-weight: 400;
 .passion{
     background-color: #f1f1f3;
     color: rgb(58, 57, 57);
-    width: 20vw;
+    width: 18vw;
     text-align: center;
     height: 2.2vw;
     padding: 0.4vw;
     font-size: 1vw;
     font-weight: 500;
     position: fixed;
-    font-family: "Montserrat", sans-serif;
-    left: 9.5vw;
+    font-family: "Helvetica", sans-serif;
+    left: 10.5vw;
     top: 1px;
     margin-top: 21vw;
     border-radius: 3px;
@@ -407,7 +413,7 @@ hr{
 .containerXY{
     display: flex;
     justify-content: flex-start;
-    gap: 0.6vw;
+    row-gap: 0.6vw;
     align-items: center;
 }
 
@@ -561,6 +567,7 @@ hr{
     margin-top: 1.5vw;
     margin-left: 3vw;
     gap: 2vw;
+    margin-bottom: 1.5vw;
 }
 
 .experienceInnerContainer{
@@ -646,7 +653,6 @@ textarea {
     resize: none; 
 }
 input[type="submit"] {
-    background-color: #4caf50;
     color: #fff;
     font-size: 18px;
     border: none;
@@ -655,11 +661,47 @@ input[type="submit"] {
     border-radius: 5px;
     display: block;
     margin: auto;
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
 }
 input[type="submit"]:hover {
-    background-color: #45a049;
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
 }
 
+input[type="submit"] :focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+input[type="submit"] :active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
 
 input[type="text"], input[type="email"] {
     width: 100%;
