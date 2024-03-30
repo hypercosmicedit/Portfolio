@@ -137,7 +137,7 @@ font-weight: 400;
 }
 @keyframes slideInFromBelow {
     0% {
-        transform: translateY(120%);
+        transform: translateY(3vw);
         opacity: 0;
     }
     100% {
@@ -150,6 +150,11 @@ font-weight: 400;
 @font-face {
     font-family: "Themundayfreeversion-Regular";
     src: url('./assets/Themundayfreeversion-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "hatton";
+    src: url('./assets/PP\ Hatton\ Medium\ 500.otf') format('opentype');
 }
 
 @font-face {
@@ -325,9 +330,9 @@ font-weight: 400;
 
 .secondHalf{
     min-width: 55vw;
-    min-height: 100vw;
     background-color: ghostwhite;
     border-radius: 12px;
+    padding-bottom: 5vw;
     margin-bottom: 10vw;
 }
 
@@ -358,18 +363,18 @@ font-weight: 400;
 .passion{
     background-color: #f1f1f3;
     color: rgb(58, 57, 57);
-    width: 18vw;
+    width: 20vw;
     text-align: center;
     height: 2.2vw;
-    padding: 0.4vw;
-    font-size: 1vw;
+    padding:  0.1vw 0.4vw 0 0.4vw;
+    font-size: 1.2vw;
     font-weight: 500;
     position: fixed;
     font-family: "Helvetica", sans-serif;
-    left: 10.5vw;
+    left: 9.5vw;
     top: 1px;
     margin-top: 21vw;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .iconResume{
@@ -457,15 +462,32 @@ hr{
 
 .aboutText{
     width: 49vw;
-    font-family: serif;
     margin: auto;
     text-align: justify;
-    margin-top: 2vw;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Helvetica", serif; 
     font-weight: 500;
-    color: rgb(128, 127, 127);
-    font-size: 1.4vw;
+    color: rgb(0, 0, 0);
+    font-size: 1.3vw;
+    margin-top: 0.8vw;
+    list-style:disc;
+}
+@font-face {
+    font-family: "Hatton-thin";
+    src: url('./assets/PP\ Hatton\ Ultralight\ 200.otf') format('opentype');
+}
 
+.aboutTextP{
+    width: 48vw;
+    margin: auto;
+    text-align: justify;
+    font-family: "Hatton-thin", sans-serif;
+    font-family: "hatton", sans-serif;
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
+    color: rgb(82, 81, 81);
+    font-size: 1.4vw;
+    font-style: italic;
+    margin-top: 1.1vw;
 }
 
 .doingContainer{
@@ -523,7 +545,7 @@ hr{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-top: 0.4vw;
+    margin-top: 1vw;
     margin-bottom: 0.8vw;
 }
 
@@ -539,12 +561,13 @@ hr{
 
 .skillsText{
     font-size: 1.3vw;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Helvetica", serif; 
+
     width: 14vw;
 }
 
 .skillsFillBar{
-    width: 8vw;
+    width: 11.2vw;
     height: 0.6vw;
     background-color: #089fda;
     border-radius: 3px;
@@ -566,7 +589,7 @@ hr{
     flex-direction: column;
     margin-top: 1.5vw;
     margin-left: 3vw;
-    gap: 2vw;
+    gap: 1vw;
     margin-bottom: 1.5vw;
 }
 
@@ -580,7 +603,7 @@ hr{
 .experienceSubHeading{
     font-weight: 600;
     font-size: 1.3vw;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Helvetica", serif; 
     width: fit-content;
 }
 
@@ -589,7 +612,7 @@ hr{
     text-align: justify;
     font-size: 1.1vw;
     font-family: "Noto Sans", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .navBarRS{
