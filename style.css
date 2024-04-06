@@ -40,6 +40,7 @@ a{
 .backGround{
     width: 100%;
     position: relative;
+    background: black;
 }
 
 .backGroundVideo{
@@ -436,7 +437,7 @@ hr{
 }
 
 .textYZ{
-    font-size: 1.1vw;
+    font-size: 1vw;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -566,7 +567,6 @@ hr{
 .skillsText{
     font-size: 1.3vw;
     font-family: "Helvetica", serif; 
-
     width: 14vw;
 }
 
@@ -648,91 +648,101 @@ hr{
 
 /* contactPage */
 .containerContact {
-    width: 50vw;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 55vw;
+    /* padding: 20px; */
+    background-color: #fff0;
+    /* border: 2px solid #fff; */
+    border-radius: 12px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     font-family: "Montserrat", sans-serif;
-
 }
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 label {
     display: block;
-    font-weight: 500;
+    font-weight: 600;
     font-family: 'Times New Roman', Times, serif;
     font-family: "Montserrat", sans-serif;
-
+    color: #fff;
     margin-bottom: 5px;
+    margin-top: 10px;
 }
 input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-textarea {
-    height: 130px;
-    resize: none; 
-}
-input[type="submit"] {
     color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 15px;
+    height: 150px;
+    resize: none; 
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: none;
+}
+
+
+input[type="submit"] {
     font-size: 18px;
-    border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
     display: block;
     margin: auto;
     align-items: center;
-    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
-    border: 0;
+    background-color: transparent;
     border-radius: 6px;
-    box-shadow: rgba(45, 35, 66, .5) 0 2px 4px,rgba(45, 35, 66, .4) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
     box-sizing: border-box;
+    border: 2px white solid;
     color: #fff;
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
     height: 48px;
+    background-color: transparent;
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
-    transition: box-shadow 300ms,transform 300ms;
+    /* transition: box-shadow 300ms,transform 300ms; */
     font-size: 18px;
 }
+
 input[type="submit"]:hover {
-    box-shadow: rgba(46, 35, 66, .4) 0 4px 8px, rgba(46, 35, 66, .3) 0 7px 13px -3.1px, #3c4fe0 0 -3px 0 inset;
-}
-
-input[type="submit"] :focus {
-  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-}
-
-input[type="submit"] :active {
-  box-shadow: #3c4fe0 0 3px 7px inset;
-  transform: translateY(2px);
+  transform: translateY(-2px);
 }
 
 input[type="text"], input[type="email"] {
     width: 100%;
+    color: #fff !important;
     padding: 10px;
-    height: 35px;
-    border: 1px solid #ccc;
+    height: 45px;
+    border: none;
+    border: 2px solid #fff;
     border-radius: 5px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
+    font-size: 15px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    border: none;
+    background-color: #fff0;
+}
+
+.contactBg{
+    width: 100%;
+    background: linear-gradient(#000, #4d4d4d);
+    height: 100vh;
 }
 
 .BigContainer{
     display: flex;
     justify-content: center; 
-    margin-top: 1vw;
+    padding-top: 0vh;
     align-items: center;
 }
 
@@ -744,16 +754,12 @@ transform: rotate(0deg) skewX(-30deg) translateY(-2px);
     .BigContainer{
         display: flex;
         justify-content: center; 
-        margin-top: 10vw;
+        /* padding-top: 9vh; */
         align-items: center;
     }
 }
 
 @media(min-aspect-ratio: 9/16){
-    .backGroundVideo{
-        width: 100%;
-        height: auto;
-    }
     .navigationBar ul li{
         color: white;
         font-family: "Montserrat", sans-serif;
@@ -826,7 +832,7 @@ transform: rotate(0deg) skewX(-30deg) translateY(-2px);
     .containerContact {
         width: 70vw;
         padding: 20px;
-        background-color: #fff;
+        background-color: transparent;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
