@@ -330,15 +330,17 @@ font-weight: 400;
     min-width: 25vw;
     min-height: 39.2vw;
     border-radius: 12px;
-    background-color: ghostwhite;
+    background: linear-gradient(rgb(255, 255, 255), #F2F2F2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .secondHalf{
     min-width: 55vw;
-    background-color: ghostwhite;
     border-radius: 12px;
     padding-bottom: 5vw;
     margin-bottom: 10vw;
+    background: linear-gradient(rgb(255, 255, 255), #F2F2F2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .profilePhoto{
@@ -703,7 +705,6 @@ input[type="submit"] {
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
-    /* transition: box-shadow 300ms,transform 300ms; */
     font-size: 18px;
 }
 
@@ -719,7 +720,6 @@ input[type="text"], input[type="email"] {
     border: none;
     border: 2px solid #fff;
     border-radius: 5px;
-    /* box-sizing: border-box; */
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 15px;
@@ -831,7 +831,5 @@ transform: rotate(0deg) skewX(-30deg) translateY(-2px);
         padding: 20px;
         background-color: transparent;
         border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
+    }  
 }
