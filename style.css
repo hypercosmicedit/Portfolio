@@ -649,11 +649,8 @@ hr{
 /* contactPage */
 .containerContact {
     width: 55vw;
-    /* padding: 20px; */
     background-color: #fff0;
-    /* border: 2px solid #fff; */
     border-radius: 12px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     font-family: "Montserrat", sans-serif;
 }
 .form-group {

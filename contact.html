@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body class="contactBg">
-    <!-- <img src="./assets/ashley-whitlatch-36aGnv29Ss0-unsplash.jpg" alt="bg-image" class="backGroundImage"> -->
     <nav class="navigationBar">
         <img src="./assets/hyper_1.png" alt="logo.png" class="logo">
         <ul>
@@ -26,15 +25,12 @@
         <h2 style="text-align: center; font-size:34px; color: #fff; margin-bottom: 30px; font-family: 'Montserrat', serif;">Contact Me</h2>
         <form id="contactForm" method="POST">
             <div class="form-group">
-                <!-- <label for="name">Name:</label> -->
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
             </div>
             <div class="form-group">
-                <!-- <label for="email">Email:</label> -->
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
             </div>
             <div class="form-group">
-                <!-- <label for="message">Message:</label> -->
                 <textarea id="message" name="message" placeholder="Enter your Message . . ." required></textarea>
             </div>
             <input type="submit" value="Submit">
@@ -43,40 +39,6 @@
     </div>
     </div>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        
-const form = document.getElementById('contactForm');
-
-form.addEventListener('submit', (e)=>{
-    e.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    const body = `Customer Name: ${name} \n
-    Customer Email: ${email} (Click on the mail to chat with customer) \n
-    Customer Message: ${message}`;
-
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "sarthak613singh@gmail.com",
-        Password : "15848CCE757683C9357DFA21AC22377CD216",
-        To : "hypercosmic.edit@gmail.com",
-        From : "sarthak613singh@gmail.com",
-        Subject : "You have a new message from your website from "+ name,
-        Body : body
-    }).then(
-        message => {
-            console.log(message);
-            alert('Message sent successfully');
-            form.reset();
-        },
-        error => {
-            console.error('Error:', error);
-            alert('Failed to send message. Please try again later.');
-        }
-    );
-});
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
